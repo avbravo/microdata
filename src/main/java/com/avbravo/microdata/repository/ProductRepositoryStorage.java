@@ -32,7 +32,6 @@ import java.util.logging.Logger;
 
 
 import one.microstream.integrations.cdi.types.Store;
-import one.microstream.storage.types.StorageManager;
 
 
 @ApplicationScoped

@@ -2,6 +2,7 @@
 package com.avbravo.tareas.security;
 
 import com.avbravo.jmoordbutils.JsfUtil;
+import com.mongodb.client.MongoClient;
 import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.context.SessionScoped;
 import jakarta.faces.context.ExternalContext;
@@ -22,6 +23,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.constraints.NotNull;
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.logging.Logger;
 import lombok.Data;
 import org.omnifaces.util.Faces;
 import org.omnifaces.util.Messages;
@@ -51,10 +53,15 @@ private String profile;
         
 // <editor-fold defaultstate="collapsed" desc="inject()">
  
+@Inject
+Logger LOG;
 
+@Inject
+MongoClient mongoClient;
     @Inject
     private SecurityContext securityContext;
 
+    
     @Inject
     private FacesContext facesContext;
     
@@ -80,6 +87,8 @@ private String profile;
         try {
             System.out.println("---> init...");
             // Usuario logeado
+            
+            
           
         } catch (Exception e) {
             
