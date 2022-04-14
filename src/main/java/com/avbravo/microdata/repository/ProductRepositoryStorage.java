@@ -37,7 +37,7 @@ import one.microstream.integrations.cdi.types.Store;
 @ApplicationScoped
 public class ProductRepositoryStorage implements ProductRepository
 {
-	
+
     @Inject
     Logger LOG;
 	@Inject
