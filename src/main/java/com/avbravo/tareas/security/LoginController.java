@@ -2,7 +2,8 @@
 package com.avbravo.tareas.security;
 
 import com.avbravo.jmoordbutils.JsfUtil;
-import com.mongodb.client.MongoClient;
+import com.jmoordbgenesis.repository.Repository;
+import com.mongodb.MongoClient;
 import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.context.SessionScoped;
 import jakarta.faces.context.ExternalContext;
@@ -56,8 +57,12 @@ private String profile;
 @Inject
 Logger LOG;
 
+//@Inject
+//MongoClient mongoClient;
+
 @Inject
-MongoClient mongoClient;
+Repository Repository;
+
     @Inject
     private SecurityContext securityContext;
 

@@ -36,7 +36,7 @@
             <dependency>
                 <groupId>org.jboss.arquillian</groupId>
                 <artifactId>arquillian-bom</artifactId>
-                <version>1.7.0.Alpha5</version>
+                <version>1.7.0.Alpha10</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -93,7 +93,7 @@
         <dependency>
             <groupId>fish.payara.arquillian</groupId>
             <artifactId>arquillian-payara-server-embedded</artifactId>
-            <version>3.0.alpha2</version>
+            <version>3.0.alpha3</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -229,10 +229,27 @@ Microprofile
             <version>3.0</version>
             <type>jar</type>
         </dependency>
-        <dependency>
+<!--        <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>jmoordbcore</artifactId>
             <version>0.1.2</version>
+        </dependency>-->
+        <!--        <dependency>
+            <groupId>com.jmoordbgenesis</groupId>
+            <artifactId>jmoordbgenesis</artifactId>
+            <version>0.1</version>
+        </dependency>-->
+        
+          <dependency>
+            <groupId>org.eclipse.microprofile.config</groupId>
+            <artifactId>microprofile-config-api</artifactId>
+            <version>3.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.jmoordbgenesis</groupId>
+            <artifactId>jmoordbgenesis</artifactId>
+            <version>0.1</version>
         </dependency>
     </dependencies>
     
